@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.table-wrap {
+  width: 50%;
+}
+.active {
+  color: #f00;
+}
+.table {
+  width: 100%;
+  td, th {
+      border: 1px solid #789abc;
+  }
+  .order {
+      font-weight: 700;
+      color: blue;
+      cursor: pointer;
+  }
+}
+
+// 路由过渡动画样式
+.fade-enter,.fade-exit {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: all 250ms ease-in;
+}
